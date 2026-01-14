@@ -37,6 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       gh-org: ${{ env.gh-org }}
+      keycloak-rel-org: ${{ env.keycloak-rel-org }}
       mvn-deploy-options: ${{ env.mvn-deploy-options }}
       quay-org: ${{ env.quay-org }}
       docker-org: ${{ env.docker-org }}
