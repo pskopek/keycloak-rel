@@ -6,6 +6,9 @@ on:
       gh-org:
         description: "GitHub Organization"
         value: ${{ jobs.env.outputs.gh-org }}
+      keycloak-rel-org:
+        description: "GitHub Organization for keycloak-rel repository"
+        value: ${{ jobs.env.outputs.keycloak-rel-org }}
       mvn-deploy-options:
         description: "Maven Deploy Options"
         value: ${{ jobs.env.outputs.mvn-deploy-options }}
