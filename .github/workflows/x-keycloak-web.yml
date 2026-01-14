@@ -77,13 +77,6 @@ jobs:
     needs: [upload-docs]
 
     steps:
-      - name: Checkout scripts repository to the runner
-        uses: actions/checkout@v3
-        with:
-          repository: "${{ inputs.keycloak-rel-org }}/keycloak-rel"
-          token: ${{ secrets.GH_TOKEN }}
-          path: keycloak-rel
-
       - name: Checkout Repository
         uses: actions/checkout@v3.0.0
         with:
